@@ -15,7 +15,7 @@ import liquidfish.easion.R;
 
 public class HomeScreen extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
 
-   private static String TAG = MainActivity.class.getSimpleName();
+   private static String TAG = HomeScreen.class.getSimpleName();
 
     private Toolbar mToolbar;
     private FragmentDrawer drawerFragment;
@@ -75,10 +75,26 @@ public class HomeScreen extends AppCompatActivity implements FragmentDrawer.Frag
                 title = getString(R.string.title_home);
                 break;
             case 1:
-                fragment = new FriendsFragment();
-                title = getString(R.string.title_friends);
+                fragment = new TaskList();
+                title = getString(R.string.title_task_list);
                 break;
             case 2:
+                fragment = new MessagesFragment();
+                title = getString(R.string.title_messages);
+                break;
+            case 3:
+                fragment = new ContactScreen();
+                title = getString(R.string.title_contact);
+                break;
+            case 4:
+                fragment = new MessagesFragment();
+                title = getString(R.string.title_messages);
+                break;
+            case 5:
+                fragment = new MessagesFragment();
+                title = getString(R.string.title_messages);
+                break;
+            case 6:
                 fragment = new MessagesFragment();
                 title = getString(R.string.title_messages);
                 break;

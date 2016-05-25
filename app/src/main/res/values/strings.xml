@@ -2,22 +2,6 @@
     <string name="app_name">Easion</string>
     <string name="title_activity_login_screen">Sign in</string>
 
-
-    <!-- <string-array name="planets_array">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
-    </string-array>
-    <string name="drawer_open">Open navigation drawer</string>
-    <string name="drawer_close">Close navigation drawer</string>
-    <string name="action_websearch">Web search</string>
-    <string name="app_not_available">Sorry, there\'s no web browser available</string> -->
-
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
@@ -41,20 +25,28 @@
     <string name="action_drawer">Drawer</string>
 
     <!-- temp names for testing purposes -->
-    <string name="nav_item_home">Home</string>
-    <string name="nav_item_friends">Friends</string>
-    <string name="nav_item_notifications">Messages</string>
+    <string name="nav_item_home">Hoofdpagina</string>
+    <string name="nav_item_list">Overzicht</string>
+    <string name="nav_item_info">Info</string>
+    <string name="nav_item_contact">Contact</string>
+    <string name="nav_item_settings">Instellingen</string>
 
     <!-- navigation drawer item labels  -->
     <string-array name="nav_drawer_labels">
         <item>@string/nav_item_home</item>
-        <item>@string/nav_item_friends</item>
-        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_list</item>
+        <item>@string/nav_item_info</item>
+        <item>@string/nav_item_contact</item>
+        <item>@string/nav_item_settings</item>
     </string-array>
 
-    <string name="title_messages">Messages</string>
-    <string name="title_friends">Friends</string>
+    <string name="title_messages">Message</string>
+
     <string name="title_home">Home</string>
+    <string name="title_task_list">Overzicht</string>
+    <string name="title_info">Info</string>
+    <string name="title_contact">Contact</string>
+    <string name="title_settings">Instellingen</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

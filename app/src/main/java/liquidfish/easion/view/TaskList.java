@@ -1,18 +1,20 @@
 package liquidfish.easion.view;
 
 import android.app.Activity;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import liquidfish.easion.R;
 
-public class Task extends Fragment {
+/**
+ * Created by Rick on 25-5-2016.
+ */
+public class TaskList extends Fragment {
 
-    public Task() {
+    public TaskList() {
         // Required empty public constructor
     }
 
@@ -25,7 +27,7 @@ public class Task extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_task_list, container, false);
 
 
         // Inflate the layout for this fragment
