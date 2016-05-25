@@ -15,7 +15,7 @@ import liquidfish.easion.R;
 
 public class HomeScreen extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
 
-    private static String TAG = MainActivity.class.getSimpleName();
+   private static String TAG = MainActivity.class.getSimpleName();
 
     private Toolbar mToolbar;
     private FragmentDrawer drawerFragment;
