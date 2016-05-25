@@ -25,7 +25,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/emailText"
@@ -41,7 +41,7 @@
         android:layout_alignTop="@+id/emailText"
         android:layout_toEndOf="@+id/pictureView" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lastLogin"
@@ -50,11 +50,12 @@
         android:layout_marginBottom="55dp"
         android:text="Last login" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/activeText"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="Active user" />
+    
 </RelativeLayout>

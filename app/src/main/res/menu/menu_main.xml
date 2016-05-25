@@ -7,6 +7,11 @@
         android:title="@string/action_settings"
         app:showAsAction="never" />
 
-
+    <item
+        android:id="@+id/action_drawer"
+        android:title="@string/action_drawer"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_drawer"
+        app:showAsAction="ifRoom" />
 
 </menu>
