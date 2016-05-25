@@ -46,6 +46,11 @@ public class HomeScreen extends AppCompatActivity implements FragmentDrawer.Frag
         return true;
     }
 
+    /**
+     * This will be activated once an option from the optionsmenu has been tapped
+     * @param item is the MenuItem tapped
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -66,6 +71,11 @@ public class HomeScreen extends AppCompatActivity implements FragmentDrawer.Frag
         displayView(position);
     }
 
+    /**
+     * This will activate when an item in the nav_bar has been tapped
+     * @param position is the position of the item in the nav_bar that has been tapped
+     * To add items go to res->values->strings.xml, link the items in this function
+     */
     private void displayView(int position) {
         Fragment fragment = null;
         String title = getString(R.string.app_name);
