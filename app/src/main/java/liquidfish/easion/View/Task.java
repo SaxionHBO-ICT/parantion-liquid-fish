@@ -1,7 +1,9 @@
-package liquidfish.easion;
+package liquidfish.easion.View;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import liquidfish.easion.R;
 
 public class Task extends AppCompatActivity {
 
