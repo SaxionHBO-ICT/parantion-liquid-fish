@@ -20,9 +20,7 @@
         <activity
             android:name=".view.LoginScreen"
             android:label="@string/title_activity_login_screen" />
-        <activity android:name=".view.Task" />
-        <activity android:name=".view.ContactScreen" />
-        <activity android:name=".view.TaskListActivity" />
+
        <!-- <activity android:name=".view.HomeScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
