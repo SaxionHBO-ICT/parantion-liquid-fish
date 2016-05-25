@@ -1,4 +1,4 @@
-package liquidfish.easion;
+package liquidfish.easion.model;
 
 /**
  * Created by Laptop Roeland on 25-5-2016.
