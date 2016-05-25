@@ -1,13 +1,15 @@
-package liquidfish.easion;
+package liquidfish.easion.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import liquidfish.easion.R;
+
+public class Task extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_task);
     }
 }
