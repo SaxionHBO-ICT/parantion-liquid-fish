@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.LinearLayout;
 
 /**
  * Created by Rick on 31-5-2016.
@@ -35,7 +34,7 @@ public class ProgressView extends View {
         Paint outline = new Paint();
         outline.setColor(Color.BLACK);
         outline.setStyle(Paint.Style.STROKE);
-        outline.setStrokeWidth(1.8f);
+        outline.setStrokeWidth(1f);
 
 
         int width = canvas.getWidth();

@@ -25,7 +25,7 @@
             android:paddingTop="2dp" />
 
         <TextView
-            android:id="@+id/progressText"
+            android:id="@+id/senderText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Progress:" />

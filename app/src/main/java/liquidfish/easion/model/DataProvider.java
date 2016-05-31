@@ -11,9 +11,9 @@ public abstract class DataProvider {
     public static ArrayList<Task> getTasks(){
         ArrayList<Task> list = new ArrayList();
 
-        list.add(new Task(1, "testSender", "Task 1", "first task", 0, "http://www.randomlink.com"));
-        list.add(new Task(2, "testSender", "Task 2", "second task", 0, "http://www.randomlink.com"));
-        list.add(new Task(3, "testSender", "Task 3", "first task", 0, "http://www.randomlink.com"));
+        list.add(new Task(1, "Parantion", "Voortgang MOE", "first task", 0, "http://www.randomlink.com"));
+        list.add(new Task(2, "Parantion", "Tweede vragenlijst", "second task", 0, "http://www.randomlink.com"));
+        list.add(new Task(3, "Parantion", "MOE", "third task", 0, "http://www.randomlink.com"));
         list.add(new Task(3, "testSender", "Task 4", "second task", 0, "http://www.randomlink.com"));
 
         return list;

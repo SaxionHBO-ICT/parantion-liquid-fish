@@ -8,7 +8,6 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import liquidfish.easion.R;
 import liquidfish.easion.model.Task;
@@ -37,7 +36,8 @@ public class TaskAdapter extends ArrayAdapter<Task> {
         TextView titleText = (TextView) convertView.findViewById(R.id.titleText);
         titleText.setText(task.getLabel());
 
-        TextView progressText = (TextView) convertView.findViewById(R.id.progressText);
+        TextView senderText = (TextView) convertView.findViewById(R.id.senderText);
+        senderText.setText(task.getSender());
 
         ProgressView progressView = (ProgressView) convertView.findViewById(R.id.progressView);
         progressView = new ProgressView(getContext());

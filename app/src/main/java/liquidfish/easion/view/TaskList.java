@@ -6,12 +6,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
+import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import liquidfish.easion.R;
 import liquidfish.easion.adapter.TaskAdapter;
@@ -40,16 +39,17 @@ public class TaskList extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_task_list, container, false);
 
-//        String[] tasks = new String[]{"test", "testy", "herpaflerp", "nog meer strings", "en dit dan?", "doen we al wat meer?"};
-//        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, android.R.id.text1, tasks);
        TaskAdapter adapter = new TaskAdapter(getActivity(), R.layout.task_layout, tasks);
-        ListView lv = (ListView) rootView.findViewById(R.id.listView);
-        lv.setAdapter(adapter);
+       ListView lv = (ListView) rootView.findViewById(R.id.listView);
+       lv.setAdapter(adapter);
 
-
- //       RelativeLayout layout = (RelativeLayout) rootView.findViewById(R.id.task_layout);
-
-
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                CharSequence text = "Opening " + tasks.get(position).getLabel();
+                Toast.makeText(getContext(), text, Toast.LENGTH_SHORT).show();
+            }
+        });
 
         // Inflate the layout for this fragment
         return rootView;
