@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -80,6 +81,9 @@ public class FragmentDrawer extends Fragment {
 
         TextView name = (TextView) layout.findViewById(R.id.nameUser);
         name.setText(StaticInfo.user.getFirstname() + " " + StaticInfo.user.getMiddlename() + "" + StaticInfo.user.getLastname());
+
+        ImageView profilePicture = (ImageView) layout.findViewById(R.id.profilePicture);
+        profilePicture.setImageResource(R.drawable.temp_photo);
 
 
         recyclerView = (RecyclerView) layout.findViewById(R.id.drawerList);

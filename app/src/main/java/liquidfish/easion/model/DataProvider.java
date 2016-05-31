@@ -14,7 +14,6 @@ public abstract class DataProvider {
         list.add(new Task(1, "Parantion", "Voortgang MOE", "first task", 0, "http://www.randomlink.com"));
         list.add(new Task(2, "Parantion", "Tweede vragenlijst", "second task", 0, "http://www.randomlink.com"));
         list.add(new Task(3, "Parantion", "MOE", "third task", 0, "http://www.randomlink.com"));
-        list.add(new Task(3, "testSender", "Task 4", "second task", 0, "http://www.randomlink.com"));
 
         return list;
     }
