@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +21,7 @@ import java.util.List;
 import liquidfish.easion.R;
 import liquidfish.easion.adapter.NavigationDrawerAdapter;
 import liquidfish.easion.model.NavDrawerItem;
+import liquidfish.easion.model.StaticInfo;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -75,6 +77,11 @@ public class FragmentDrawer extends Fragment {
                              Bundle savedInstanceState) {
         // Inflating view layout
         View layout = inflater.inflate(R.layout.fragment_navigation_drawer, container, false);
+
+        TextView name = (TextView) layout.findViewById(R.id.nameUser);
+        name.setText(StaticInfo.user.getFirstname() + " " + StaticInfo.user.getMiddlename() + "" + StaticInfo.user.getLastname());
+
+
         recyclerView = (RecyclerView) layout.findViewById(R.id.drawerList);
 
         adapter = new NavigationDrawerAdapter(getActivity(), getData());
