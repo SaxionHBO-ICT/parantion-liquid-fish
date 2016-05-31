@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/task_layout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="100"
+        android:orientation="vertical"
+        android:paddingLeft="6dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="23dp"
+            android:paddingTop="2dp" />
+
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Progress:" />
+
+    </LinearLayout>
+
+    <liquidfish.easion.view.ProgressView
+        android:id="@+id/progressView"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_weight="100" />
+
+
+</LinearLayout>

@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 
 import liquidfish.easion.R;
 
-public class Task extends Fragment {
+public class TaskMockup extends Fragment {
 
-    public Task() {
+    public TaskMockup() {
         // Required empty public constructor
     }
 
