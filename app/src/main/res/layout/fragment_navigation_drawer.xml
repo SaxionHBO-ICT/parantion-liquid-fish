@@ -25,7 +25,9 @@
             android:text="UserName"
             android:id="@+id/nameUser"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="3dp"
+            android:textSize="18dp" />
 
     </RelativeLayout>
 
