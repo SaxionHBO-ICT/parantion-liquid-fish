@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import liquidfish.easion.R;
 
@@ -39,19 +40,19 @@ public class HomeScreen extends AppCompatActivity implements FragmentDrawer.Frag
         displayView(0);
     }
 
-    @Override
+   /* @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
-    }
+    }*/
 
     /**
      * This will be activated once an option from the optionsmenu has been tapped
      * @param item is the MenuItem tapped
      * @return
      */
-    @Override
+   /* @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -64,7 +65,7 @@ public class HomeScreen extends AppCompatActivity implements FragmentDrawer.Frag
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     @Override
     public void onDrawerItemSelected(View view, int position) {
@@ -89,24 +90,24 @@ public class HomeScreen extends AppCompatActivity implements FragmentDrawer.Frag
                 title = getString(R.string.title_task_list);
                 break;
             case 2:
-                fragment = new MessagesFragment();
-                title = getString(R.string.title_messages);
+                fragment = new InfoFragment();
+                title = getString(R.string.title_info);
                 break;
             case 3:
-                fragment = new ContactScreen();
-                title = getString(R.string.title_contact);
+                CharSequence text0 = "In development";
+                Toast.makeText(this, text0, Toast.LENGTH_SHORT).show();
                 break;
             case 4:
-                fragment = new MessagesFragment();
-                title = getString(R.string.title_messages);
+                CharSequence text = "In development";
+                Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
                 break;
             case 5:
-                fragment = new MessagesFragment();
-                title = getString(R.string.title_messages);
+                CharSequence text1 = "In development";
+                Toast.makeText(this, text1, Toast.LENGTH_SHORT).show();
                 break;
             case 6:
-                fragment = new MessagesFragment();
-                title = getString(R.string.title_messages);
+                CharSequence text2 = "In development";
+                Toast.makeText(this, text2, Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;

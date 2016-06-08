@@ -5,6 +5,6 @@ package liquidfish.easion.model;
  */
 public abstract class StaticInfo {
 
-    public static User user = new User("harmelink.rick", "Rick", "", "Harmelink", "327841@saxion.nl", "Software Engineering", 327841);
+    public static User user = new User("harmelink.rick", "Rick", "", "Harmelink", "327841@saxion.nl", "Software Engineering", "327841");
 
 }

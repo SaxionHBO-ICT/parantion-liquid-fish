@@ -15,16 +15,32 @@ public class User {
     private Date registrationDate;
     private String profilePicture;
     private String uitstroomProfiel;
-    private int studentNumber;
+    private String studentNumber;
 
-    public User(String username, String firstname, String middlename, String lastname, String email, String uitstroomProfiel, int studentNumber) {
+    public User(String username, String firstname, String middlename, String lastname, String email, String uitstroomProfiel, String studentNumber) {
         this.username = username;
         this.firstname = firstname;
         this.middlename = middlename;
         this.lastname = lastname;
         this.email = email;
-       this.uitstroomProfiel = uitstroomProfiel;
+        this.uitstroomProfiel = uitstroomProfiel;
         this.studentNumber = studentNumber;
+    }
+
+    public User(String username, String email, String lastname) {
+        this.username = username;
+        this.email = email;
+        this.lastname = lastname;
+    }
+
+    protected User(User another){
+        this.username = another.getUsername();
+        this.firstname = another.getFirstname();
+        this.middlename = another.getMiddlename();
+        this.lastname = another.getLastname();
+        this.email = another.getEmail();
+        this.uitstroomProfiel = another.getUitstroomProfiel();
+        this.studentNumber = another.getStudentNumber();
     }
 
     public void setEmail(String email) {
@@ -67,7 +83,11 @@ public class User {
         return uitstroomProfiel;
     }
 
-    public int getStudentNumber() {
+    public String getStudentNumber() {
         return studentNumber;
+    }
+
+    public User getCopy(){
+        return new User(this);
     }
 }
