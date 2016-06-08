@@ -50,7 +50,7 @@ public class TaskList extends Fragment {
                 Toast.makeText(getContext(), text, Toast.LENGTH_SHORT).show();
             }
         });
-
+        // bla bla
         // Inflate the layout for this fragment
         return rootView;
     }
