@@ -7,12 +7,17 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
+import liquidfish.easion.model.Task;
+
 /**
  * Created by Rick on 31-5-2016.
  */
 public class ProgressView extends View {
-    public ProgressView(Context context) {
+    private Task task;
+
+    public ProgressView(Context context, Task task) {
         super(context);
+        this.task = task;
     }
 
     public ProgressView(Context context, AttributeSet attrs) {
@@ -28,8 +33,27 @@ public class ProgressView extends View {
         super.onDraw(canvas);
 
         Paint paint = new Paint();
-        paint.setColor(Color.GREEN);
         paint.setStyle(Paint.Style.FILL);
+        if (task != null) {
+            switch (task.getProgress()) {
+                case 0://not started
+                    paint.setColor(Color.GREEN);
+                    break;
+                case 1://started
+                    paint.setColor(Color.rgb(255, 153, 51));
+                    break;
+                case 2://done
+                    paint.setColor(Color.RED);
+                    break;
+                default:
+                    System.out.println("non legal task progress");
+                    break;
+            }
+        }else {
+            System.out.println("task is null");
+            paint.setColor(Color.GREEN);
+        }
+
 
         Paint outline = new Paint();
         outline.setColor(Color.BLACK);

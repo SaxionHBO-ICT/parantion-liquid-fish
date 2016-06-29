@@ -47,6 +47,7 @@ public class Task {
     }
 
     public int getProgress() {
+        System.out.println("getting progress: " + progress);
         return progress;
     }
 

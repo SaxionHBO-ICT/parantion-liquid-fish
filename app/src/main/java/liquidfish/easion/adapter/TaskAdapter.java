@@ -39,8 +39,9 @@ public class TaskAdapter extends ArrayAdapter<Task> {
         TextView senderText = (TextView) convertView.findViewById(R.id.senderText);
         senderText.setText(task.getSender());
 
+        Task _task = tasks.get(position);
         ProgressView progressView = (ProgressView) convertView.findViewById(R.id.progressView);
-        progressView = new ProgressView(getContext());
+        progressView = new ProgressView(getContext(), _task);
 
         return convertView;
     }

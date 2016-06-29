@@ -86,7 +86,7 @@ public class HomeScreen extends AppCompatActivity implements FragmentDrawer.Frag
                 title = getString(R.string.title_home);
                 break;
             case 1:
-               // fragment = new TaskList();
+                fragment = new TaskList();
                 title = getString(R.string.title_task_list);
                 break;
             case 2:
